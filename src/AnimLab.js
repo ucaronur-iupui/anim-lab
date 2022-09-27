@@ -16,7 +16,7 @@ export default function AnimLab(){
     });
     console.log(cards)
     setCards(genCards);
-    }, [])
+    }, [cards])
 
     // rendering stuff
     let cardEls = cards.map((card, index) => {
