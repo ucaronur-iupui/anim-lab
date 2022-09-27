@@ -1,0 +1,35 @@
+.cardStack {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 30px;
+  height: 70px;
+  border: 1px solid #333;
+  margin: 2px;
+  border-radius: 5px;
+  background-color: #999;
+}
+
+.card-enter,
+.card-appear {
+  opacity: 0;
+  width: 0;
+}
+
+.card-enter-active,
+.card-appear-active {
+  opacity: 1;
+  width: 30px;
+  transition: opacity 400ms, width 400ms;
+}
+
+.card-exit {
+  opacity: 1;
+}
+
+.card-exit-active {
+  opacity: 0;
+  transition: opacity 400ms;
+}
